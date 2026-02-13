@@ -72,13 +72,26 @@ begin
 	-- PORT MAPS --------------------
 	adder_int : ripple_adder
   port map(
-    A => sw(3 downto 0),
-    B => sw(7 downto 4),
-    Cin => sw(8),
-    S => led(3 downto 0),
-    Cout => led(15)
-  );
+  Cin => sw(0),
   
+  A(0) => sw(1),
+  A(1) => sw(2),
+  A(2) => sw(3),
+  A(3) => sw(4),
+  
+  B(0) => sw(12),
+  B(1) => sw(12),
+  B(2) => sw(12),
+  B(3) => sw(12),
+  
+  S(0) => led(0),
+  S(1) => led(1),
+  S(2) => led(2),
+  S(3) => led(3),
+  
+  Cout => led(15)
+  
+  );  
   
 	---------------------------------
 	

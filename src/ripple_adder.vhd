@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
--- Implements a 4-bit RippleCarry adder from instantiated Full Adders
+-- Implements a 4-bit RippleCarry adderfrom instantiated Full Adders
 ----------------------------------------------------------------------------------
 
 library IEEE;
@@ -64,9 +64,8 @@ begin
         B     => B(3),
         Cin   => w_carry(2),
         S     => S(3),
-        Cout  => w_carry(3)
-    );
-    Cout <= w_carry(3);
+        Cout  => Cout   );
+
 
 
 
